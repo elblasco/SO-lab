@@ -9,7 +9,7 @@ int main(){
     int byteLetti;
     do {
         byteLetti=read(openFile,contenuto,2); //read 9 bytes from openFile and put them in contenuto
-        contenuto[byteLetti]=0;
+        contenuto[byteLetti]=0; //adding a closing byte
         printf("%s",contenuto);
     }while (byteLetti>0);
     return 0;
