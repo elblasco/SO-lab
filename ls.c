@@ -1,5 +1,5 @@
 #include <stdlib.h>
 int main(){
-    system("ls");
+    system("ls -alR");
     return 0;
 }

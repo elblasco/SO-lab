@@ -1,0 +1,753 @@
+.:
+total 360
+drwxr-xr-x 4 elblasco69 elblasco69  4096 May  6 17:03 .
+drwxr-xr-x 4 elblasco69 elblasco69  4096 Mar 21 16:06 ..
+-rw-r--r-- 1 elblasco69 elblasco69   355 Mar 21 13:09 1.c
+-rw-r--r-- 1 elblasco69 elblasco69   646 Mar 22 14:03 3.c
+-rw-r--r-- 1 elblasco69 elblasco69   381 May  5 11:39 alarm.c
+-rwxr-xr-x 1 elblasco69 elblasco69 15936 May  6 17:03 a.out
+-rw-r--r-- 1 elblasco69 elblasco69   263 May  5 11:33 bash.c
+-rw-r--r-- 1 elblasco69 elblasco69   481 May  2 15:45 basicFile.c
+-rw-r--r-- 1 elblasco69 elblasco69    82 May  3 18:20 bat.c
+-rwxr-xr-x 1 elblasco69 elblasco69 15936 May  3 18:20 bat.out
+-rw-r--r-- 1 elblasco69 elblasco69   818 May  2 14:59 bi.c
+-rw-r--r-- 1 elblasco69 elblasco69   343 May  2 18:22 canaliStandar.c
+-rw-r--r-- 1 elblasco69 elblasco69   154 May  2 23:34 chdir.c
+-rw-r--r-- 1 elblasco69 elblasco69   338 May  4 17:31 child.c
+-rw-r--r-- 1 elblasco69 elblasco69   228 May  3 11:28 chown.c
+-rw-r--r-- 1 elblasco69 elblasco69   594 May  3 11:18 dup.c
+-rw-r--r-- 1 elblasco69 elblasco69   495 May  2 14:59 errFile.c
+drwxr-xr-x 2 elblasco69 elblasco69  4096 May  6 14:49 ErrorGenerator
+-rw------- 1 elblasco69 elblasco69     1 May  3 22:50 errori.txt
+-rw-r--r-- 1 elblasco69 elblasco69   477 May  2 14:59 errSig.c
+-rw-r--r-- 1 elblasco69 elblasco69   278 May  2 18:06 esercizioLunghezzaFile.c
+-rw-r--r-- 1 elblasco69 elblasco69   215 May  3 11:46 execle1.c
+-rw-r--r-- 1 elblasco69 elblasco69   176 May  3 12:00 execle2.c
+-rwxr-xr-x 1 elblasco69 elblasco69 15992 May  3 11:55 execle2.out
+-rw-r--r-- 1 elblasco69 elblasco69   181 May  3 11:41 execv1.c
+-rw-r--r-- 1 elblasco69 elblasco69   129 May  3 11:42 execv2.c
+-rwxr-xr-x 1 elblasco69 elblasco69 15936 May  3 11:42 execv2.out
+-rw-r--r-- 1 elblasco69 elblasco69   272 May  3 13:58 execvpDup.c
+-rw-r--r-- 1 elblasco69 elblasco69   420 May  2 18:02 fileDescriptors.c
+-rw-r--r-- 1 elblasco69 elblasco69   611 May  2 16:06 fileIteration.c
+-rw-r--r-- 1 elblasco69 elblasco69   131 May  3 14:14 fork1.c
+-rw-r--r-- 1 elblasco69 elblasco69   537 May  3 14:29 fork2.c
+drwxr-xr-x 8 elblasco69 elblasco69  4096 May  6 17:01 .git
+-rw-r--r-- 1 elblasco69 elblasco69    29 May  6 12:25 .gitignore
+-rw-r--r-- 1 elblasco69 elblasco69  1400 May  6 15:18 gsignal.c
+-rw-r--r-- 1 elblasco69 elblasco69   264 May  2 14:59 input.c
+-rw------- 1 elblasco69 elblasco69   504 May  3 22:50 input.txt
+-rw-r--r-- 1 elblasco69 elblasco69   609 May  4 17:52 kill.c
+-rw-r--r-- 1 elblasco69 elblasco69   405 May  3 18:27 lezione04Esercizio01.c
+-rw-r--r-- 1 elblasco69 elblasco69   691 May  3 19:05 lezione04Esercizio02.c
+-rw-r--r-- 1 elblasco69 elblasco69   947 May  3 22:51 lezione04Esercizio03.c
+-rw-r--r-- 1 elblasco69 elblasco69    70 May  6 17:02 ls.c
+-rw-r--r-- 1 elblasco69 elblasco69   337 May  2 17:33 lseek.c
+-rwxr-xr-x 1 elblasco69 elblasco69 15936 May  3 18:18 ls.out
+-rw-r--r-- 1 elblasco69 elblasco69   193 May  2 14:59 output.c
+-rw-r--r-- 1 elblasco69 elblasco69     0 May  6 17:03 output.txt
+-rw-r--r-- 1 elblasco69 elblasco69   307 May  4 16:51 param.c
+-rw-r--r-- 1 elblasco69 elblasco69   354 May  5 18:42 pause.c
+-rw-r--r-- 1 elblasco69 elblasco69   301 May  2 23:21 pipeBash2.c
+-rw-r--r-- 1 elblasco69 elblasco69   172 May  2 23:15 pipeBash.c
+-rw-r--r-- 1 elblasco69 elblasco69   363 May  2 14:59 pipe.c
+-rw-r--r-- 1 elblasco69 elblasco69   190 May  3 14:11 ppid.c
+-rw-r--r-- 1 elblasco69 elblasco69    75 May  3 23:31 README.md
+-rw-r--r-- 1 elblasco69 elblasco69   418 May  2 14:59 readPipe.c
+-rw-r--r-- 1 elblasco69 elblasco69   499 May  2 14:59 redirect.c
+-rw-r--r-- 1 elblasco69 elblasco69   270 May  4 17:20 return.c
+-rw------- 1 elblasco69 elblasco69    12 May  3 22:50 sebastiani.txt
+-rw-r--r-- 1 elblasco69 elblasco69   619 May  6 15:06 setpgid.c
+-rw-r--r-- 1 elblasco69 elblasco69   456 May  6 08:45 sigaction2.c
+-rw-r--r-- 1 elblasco69 elblasco69   498 May  6 08:52 sigaction3.c
+-rw-r--r-- 1 elblasco69 elblasco69   572 May  6 09:02 sigaction4.c
+-rw-r--r-- 1 elblasco69 elblasco69   326 May  6 08:29 sigaction.c
+-rw-r--r-- 1 elblasco69 elblasco69   195 May  4 16:40 sigCST.c
+-rw-r--r-- 1 elblasco69 elblasco69    76 May  4 16:44 sigDFL.c
+-rw-r--r-- 1 elblasco69 elblasco69    77 May  4 16:45 sigIGN.c
+-rw-r--r-- 1 elblasco69 elblasco69   394 May  4 16:36 signal.c
+-rw-r--r-- 1 elblasco69 elblasco69   681 May  5 21:25 sigpending.c
+-rw-r--r-- 1 elblasco69 elblasco69   471 May  5 18:52 sigprocmask.c
+-rw-r--r-- 1 elblasco69 elblasco69   267 May  3 14:06 system.c
+-rw-r--r-- 1 elblasco69 elblasco69   160 May  3 13:45 time.c
+-rwxr-xr-x 1 elblasco69 elblasco69 16080 May  3 13:45 time.out
+-rw-r--r-- 1 elblasco69 elblasco69   456 May  2 14:59 uni.c
+-rw-r--r-- 1 elblasco69 elblasco69   494 May  2 14:59 writePipe.c
+
+./ErrorGenerator:
+total 48
+drwxr-xr-x 2 elblasco69 elblasco69  4096 May  6 14:49 .
+drwxr-xr-x 4 elblasco69 elblasco69  4096 May  6 17:03 ..
+-rwxr-xr-x 1 elblasco69 elblasco69 16680 May  6 13:40 a.out
+-rw-r--r-- 1 elblasco69 elblasco69   585 May  6 12:47 arrayDinamico.c
+-rw-r--r-- 1 elblasco69 elblasco69   466 May  6 13:41 arrayStatico.cpp
+-rw-r--r-- 1 elblasco69 elblasco69   135 May  6 13:18 hehe.c
+-rw-r--r-- 1 elblasco69 elblasco69     0 May  6 14:49 stack.c
+-rw-r--r-- 1 elblasco69 elblasco69  8192 May  6 13:18 tmp.txt
+
+./.git:
+total 68
+drwxr-xr-x  8 elblasco69 elblasco69 4096 May  6 17:01 .
+drwxr-xr-x  4 elblasco69 elblasco69 4096 May  6 17:03 ..
+drwxr-xr-x  2 elblasco69 elblasco69 4096 Mar 21 13:09 branches
+-rw-r--r--  1 elblasco69 elblasco69    5 May  6 09:04 COMMIT_EDITMSG
+-rw-r--r--  1 elblasco69 elblasco69  253 May  3 23:12 config
+-rw-r--r--  1 elblasco69 elblasco69   73 Mar 21 13:09 description
+-rw-r--r--  1 elblasco69 elblasco69   84 May  4 17:58 FETCH_HEAD
+-rw-r--r--  1 elblasco69 elblasco69   21 Mar 21 13:09 HEAD
+drwxr-xr-x  2 elblasco69 elblasco69 4096 Mar 21 13:09 hooks
+-rw-r--r--  1 elblasco69 elblasco69 4522 May  6 09:04 index
+drwxr-xr-x  2 elblasco69 elblasco69 4096 Mar 21 13:09 info
+drwxr-xr-x  3 elblasco69 elblasco69 4096 Mar 21 13:09 logs
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 objects
+-rw-r--r--  1 elblasco69 elblasco69   41 May  2 15:00 ORIG_HEAD
+-rw-r--r--  1 elblasco69 elblasco69  112 Mar 21 13:09 packed-refs
+drwxr-xr-x  5 elblasco69 elblasco69 4096 Mar 21 13:09 refs
+
+./.git/branches:
+total 8
+drwxr-xr-x 2 elblasco69 elblasco69 4096 Mar 21 13:09 .
+drwxr-xr-x 8 elblasco69 elblasco69 4096 May  6 17:01 ..
+
+./.git/hooks:
+total 68
+drwxr-xr-x 2 elblasco69 elblasco69 4096 Mar 21 13:09 .
+drwxr-xr-x 8 elblasco69 elblasco69 4096 May  6 17:01 ..
+-rwxr-xr-x 1 elblasco69 elblasco69  478 Mar 21 13:09 applypatch-msg.sample
+-rwxr-xr-x 1 elblasco69 elblasco69  896 Mar 21 13:09 commit-msg.sample
+-rwxr-xr-x 1 elblasco69 elblasco69 4655 Mar 21 13:09 fsmonitor-watchman.sample
+-rwxr-xr-x 1 elblasco69 elblasco69  189 Mar 21 13:09 post-update.sample
+-rwxr-xr-x 1 elblasco69 elblasco69  424 Mar 21 13:09 pre-applypatch.sample
+-rwxr-xr-x 1 elblasco69 elblasco69 1643 Mar 21 13:09 pre-commit.sample
+-rwxr-xr-x 1 elblasco69 elblasco69  416 Mar 21 13:09 pre-merge-commit.sample
+-rwxr-xr-x 1 elblasco69 elblasco69 1492 Mar 21 13:09 prepare-commit-msg.sample
+-rwxr-xr-x 1 elblasco69 elblasco69 1374 Mar 21 13:09 pre-push.sample
+-rwxr-xr-x 1 elblasco69 elblasco69 4898 Mar 21 13:09 pre-rebase.sample
+-rwxr-xr-x 1 elblasco69 elblasco69  544 Mar 21 13:09 pre-receive.sample
+-rwxr-xr-x 1 elblasco69 elblasco69 2783 Mar 21 13:09 push-to-checkout.sample
+-rwxr-xr-x 1 elblasco69 elblasco69 3650 Mar 21 13:09 update.sample
+
+./.git/info:
+total 12
+drwxr-xr-x 2 elblasco69 elblasco69 4096 Mar 21 13:09 .
+drwxr-xr-x 8 elblasco69 elblasco69 4096 May  6 17:01 ..
+-rw-r--r-- 1 elblasco69 elblasco69  240 Mar 21 13:09 exclude
+
+./.git/logs:
+total 16
+drwxr-xr-x 3 elblasco69 elblasco69 4096 Mar 21 13:09 .
+drwxr-xr-x 8 elblasco69 elblasco69 4096 May  6 17:01 ..
+-rw-r--r-- 1 elblasco69 elblasco69 1574 May  6 09:04 HEAD
+drwxr-xr-x 4 elblasco69 elblasco69 4096 Mar 21 13:09 refs
+
+./.git/logs/refs:
+total 16
+drwxr-xr-x 4 elblasco69 elblasco69 4096 Mar 21 13:09 .
+drwxr-xr-x 3 elblasco69 elblasco69 4096 Mar 21 13:09 ..
+drwxr-xr-x 2 elblasco69 elblasco69 4096 Mar 21 13:09 heads
+drwxr-xr-x 3 elblasco69 elblasco69 4096 Mar 21 13:09 remotes
+
+./.git/logs/refs/heads:
+total 12
+drwxr-xr-x 2 elblasco69 elblasco69 4096 Mar 21 13:09 .
+drwxr-xr-x 4 elblasco69 elblasco69 4096 Mar 21 13:09 ..
+-rw-r--r-- 1 elblasco69 elblasco69 1574 May  6 09:04 main
+
+./.git/logs/refs/remotes:
+total 12
+drwxr-xr-x 3 elblasco69 elblasco69 4096 Mar 21 13:09 .
+drwxr-xr-x 4 elblasco69 elblasco69 4096 Mar 21 13:09 ..
+drwxr-xr-x 2 elblasco69 elblasco69 4096 May  2 14:59 origin
+
+./.git/logs/refs/remotes/origin:
+total 16
+drwxr-xr-x 2 elblasco69 elblasco69 4096 May  2 14:59 .
+drwxr-xr-x 3 elblasco69 elblasco69 4096 Mar 21 13:09 ..
+-rw-r--r-- 1 elblasco69 elblasco69  181 Mar 21 13:09 HEAD
+-rw-r--r-- 1 elblasco69 elblasco69 1327 May  6 09:07 main
+
+./.git/objects:
+total 312
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 .
+drwxr-xr-x  8 elblasco69 elblasco69 4096 May  6 17:01 ..
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  5 15:32 00
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:29 07
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  2 14:59 09
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  2 14:59 0d
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  6 09:04 10
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  6 09:04 11
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  2 15:00 13
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  4 17:54 15
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:29 24
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:29 26
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  2 14:59 2a
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  5 15:32 2d
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  6 09:04 2e
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  4 17:54 2f
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  4 17:54 32
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:29 33
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:31 34
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:29 35
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  2 14:59 36
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:29 3a
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:29 3e
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:29 43
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  6 09:04 44
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:31 48
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  2 14:59 4a
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:29 4c
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  6 09:04 50
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  2 16:25 54
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  2 14:59 5c
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:29 5d
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  2 14:59 5f
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  2 14:59 61
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  4 17:54 63
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  5 15:32 65
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  4 17:54 68
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:29 69
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:31 6a
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:29 6b
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:33 71
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:30 72
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  4 17:54 73
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  2 14:59 76
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  6 09:04 7a
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  6 09:04 7c
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  4 17:54 7d
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:29 83
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:31 86
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  2 14:59 87
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:29 8a
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:29 8b
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  2 14:59 8c
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:29 8f
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  4 17:54 9a
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  2 14:59 9b
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  2 14:59 a0
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  4 17:54 a1
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  2 16:24 a9
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:29 ab
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  2 14:59 b4
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  2 16:24 b5
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  2 14:59 bc
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:29 c0
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  2 14:59 c3
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  2 14:59 cb
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  6 09:04 d6
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:29 d9
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:29 dc
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  6 09:04 df
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  2 14:59 e3
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  5 15:32 e8
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:29 eb
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  2 16:25 ed
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:34 ef
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  2 16:24 fc
+drwxr-xr-x  2 elblasco69 elblasco69 4096 Mar 21 13:09 info
+drwxr-xr-x  2 elblasco69 elblasco69 4096 Mar 21 13:09 pack
+
+./.git/objects/00:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  5 15:32 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69 1531 May  5 15:32 51d58c2b0eb980722cf21e375cbc38ee7c255d
+
+./.git/objects/07:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:29 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  174 May  3 23:29 80c87abe8849236b49578a19fa5e6a092d3aed
+
+./.git/objects/09:
+total 16
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  2 14:59 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  105 May  2 14:59 0118aa9dae7f223475f2d443bf07d999a41503
+-r--r--r--  1 elblasco69 elblasco69  224 May  2 14:59 9a1c0c8dbb3bb3fa84a8d98fcb7a2cfe190dd7
+
+./.git/objects/0d:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  2 14:59 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  302 May  2 14:59 fe9cc86e5bb03edf583a281925441123a4f341
+
+./.git/objects/10:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  6 09:04 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69 1722 May  6 09:04 cafa63b78ce44f317b6db7b3a61c2f31e74817
+
+./.git/objects/11:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  6 09:04 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  354 May  6 09:04 b1d5017ae6962119ebe630ca6e38b183ef6ec1
+
+./.git/objects/13:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  2 15:00 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  424 May  2 15:00 f777dd9b73838e0e67f3fed5fbd2689b491f56
+
+./.git/objects/15:
+total 16
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  4 17:54 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  294 May  2 14:59 ba2fb1918f9e2848292ca77ce1508c18a58308
+-r--r--r--  1 elblasco69 elblasco69  188 May  4 17:54 d4a10c852adc57c32be9699d4ae732955c967b
+
+./.git/objects/24:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:29 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69   25 May  3 23:29 380c756c297f2385168c72372a7598ffcb67d0
+
+./.git/objects/26:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:29 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  102 May  3 23:29 bc3e4495dbb6549642b5d98fff28f749a58f6e
+
+./.git/objects/2a:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  2 14:59 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  566 May  2 14:59 b812485a600e121309c3ef98cb3efae4a3e692
+
+./.git/objects/2d:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  5 15:32 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  181 May  5 15:32 1a263f846833ed8e6a698cfd589eb1017ff65e
+
+./.git/objects/2e:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  6 09:04 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  219 May  6 09:04 a6cc69e116fa173dbe0ec39e1a74562bbbc165
+
+./.git/objects/2f:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  4 17:54 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  315 May  4 17:54 d6b39ff88a886695ce6456d827116dc451ed64
+
+./.git/objects/32:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  4 17:54 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  173 May  4 17:54 699444432b197a1a4f2ea95222eeaa4db787c0
+
+./.git/objects/33:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:29 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  370 May  3 23:29 612e82caf25cd09bc1e3533ff45ab413878996
+
+./.git/objects/34:
+total 24
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:31 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69   82 May  2 14:59 19e7326ff561dd8b686936265d61d61a878f24
+-r--r--r--  1 elblasco69 elblasco69  159 May  2 15:00 423993513167365afbc0a47bef0275403b9520
+-r--r--r--  1 elblasco69 elblasco69  158 May  3 23:29 91eb900d35dcdc9d0c0796203c4a1c6aa557d4
+-r--r--r--  1 elblasco69 elblasco69  161 May  3 23:31 f43ef83dc4b034f8feccbec08cea813f31b571
+
+./.git/objects/35:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:29 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  231 May  3 23:29 c7b365e8d7e6b1380a2cb7f96e8aba353cd02c
+
+./.git/objects/36:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  2 14:59 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  148 May  2 14:59 121689bc6507c77800ef745fc7c5d040c60563
+
+./.git/objects/3a:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:29 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  155 May  3 23:29 c073b333e6bfcd8bf4d34f1011cf4ba67cfb98
+
+./.git/objects/3e:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:29 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  146 May  3 23:29 3788c6f8d0eb9958056d32c7962734adf67763
+
+./.git/objects/43:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:29 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  141 May  3 23:29 8e79986cf28a25ae7b7aa94debae3fca162b12
+
+./.git/objects/44:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  6 09:04 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  288 May  6 09:04 6a9f76ab73181ff8902d5bd6f412d38939ef05
+
+./.git/objects/48:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:31 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69 1290 May  3 23:31 f30583fdcd0cb0f16a5b01aad978a27b00123f
+
+./.git/objects/4a:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  2 14:59 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  398 May  2 14:59 7445c7c97ecc1e553b4c22438d19e9526318e3
+
+./.git/objects/4c:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:29 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  170 May  3 23:29 dd6f66812515f0472ec24a3be552ff921358c0
+
+./.git/objects/50:
+total 16
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  6 09:04 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  293 May  6 09:04 4e7ccfc869ba1d5e1f86f3cabab9dd033546c9
+-r--r--r--  1 elblasco69 elblasco69  359 May  2 14:59 e7d1838c966ab0e7fdd5e31989e1515c613cc1
+
+./.git/objects/54:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  2 16:25 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  173 May  2 16:25 e114c1ca020ab4f3d656cf8d1476dacd8e56cf
+
+./.git/objects/5c:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  2 14:59 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  135 May  2 14:59 846a4b30d60878304f531da385d5fc7fa08204
+
+./.git/objects/5d:
+total 16
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:29 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  253 May  2 14:59 64ecd51004482660268a0138613cd8bc32dd79
+-r--r--r--  1 elblasco69 elblasco69  275 May  3 23:29 87f62a50eaf777395057d0ddd45dd87da7f275
+
+./.git/objects/5f:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  2 14:59 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  309 May  2 14:59 21ddece24dbb4e2dda291d8f86e6c103b2218f
+
+./.git/objects/61:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  2 14:59 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  193 May  2 14:59 c25c442bae8d3de08847745070d5d75ddc7254
+
+./.git/objects/63:
+total 16
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  4 17:54 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69   76 May  3 23:29 2e92f94430036050931b362a371ae5a669eafe
+-r--r--r--  1 elblasco69 elblasco69   81 May  4 17:54 ff47795eaf3d341cc304699d8607fcabfdf05c
+
+./.git/objects/65:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  5 15:32 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  246 May  5 15:32 052bc6c8d22fef64c42e6309c63fe6e58b329b
+
+./.git/objects/68:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  4 17:54 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69 1479 May  4 17:54 f3b6b138a7bf0b292026afc1d825220361be6b
+
+./.git/objects/69:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:29 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  140 May  3 23:29 7085ec5a5f1277f7fb196485c6ec08e616c7b0
+
+./.git/objects/6a:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:31 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69   84 May  3 23:31 38650a9297dde207e911455b93460bc1cc1a55
+
+./.git/objects/6b:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:29 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  178 May  3 23:29 be2c6ecbca7fb5830e549e100a2b83d298c965
+
+./.git/objects/71:
+total 16
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:33 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69 1265 May  3 23:33 199d2d6276f4954e7efd603f72f1ce87fc3ac6
+-r--r--r--  1 elblasco69 elblasco69  144 May  3 23:29 aa577b8b0f7a7a3270e10d20d274e99bebc861
+
+./.git/objects/72:
+total 20
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:30 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69 1289 May  3 23:30 35c4dc89428589413f50c646624daf490ef56b
+-r--r--r--  1 elblasco69 elblasco69  291 May  2 14:59 503f654e210c6be7109b9422237037212b8c1a
+-r--r--r--  1 elblasco69 elblasco69  312 May  3 23:29 d2cdf9c5cf24c8270e98fadd2d3a19b4bf3239
+
+./.git/objects/73:
+total 16
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  4 17:54 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  251 May  2 16:24 dad726864c5d6f33b3e4cf96279caa80f5e398
+-r--r--r--  1 elblasco69 elblasco69  151 May  4 17:54 efb32acdc2a490a7c0fce062fbc4a13adb4e19
+
+./.git/objects/76:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  2 14:59 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  189 May  2 14:59 dccb5eafe2f373da0a0a9aac7d29ba7a52060f
+
+./.git/objects/7a:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  6 09:04 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  154 May  6 09:04 28bbd81d048c9ab4735adbae6e54dfacd37637
+
+./.git/objects/7c:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  6 09:04 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  328 May  6 09:04 852d4a00d2d15937471ffdb2256f286b4cfe67
+
+./.git/objects/7d:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  4 17:54 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  166 May  4 17:54 af515c7bc411cc0c030e570d3e867c0a9b9c84
+
+./.git/objects/83:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:29 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  197 May  3 23:29 1335476b531493d660bd8f4f650d9cfc24f00e
+
+./.git/objects/86:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:31 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  159 May  3 23:31 6b8c66641f5679cc2d4c9164b6252c274bbb98
+
+./.git/objects/87:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  2 14:59 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  188 May  2 14:59 ed5358539550431151cc7274848982c0afa47d
+
+./.git/objects/8a:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:29 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  131 May  3 23:29 bda8a3ecb168c5fbc0e4cc957da43a8c151ea1
+
+./.git/objects/8b:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:29 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69   16 May  3 23:29 137891791fe96927ad78e64b0aad7bded08bdc
+
+./.git/objects/8c:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  2 14:59 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  298 May  2 14:59 31b842d353de8f8bb0f1474f968dfd574151d5
+
+./.git/objects/8f:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:29 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  213 May  3 23:29 60c1c23af13ea57adcc1d9713c88c96886e52d
+
+./.git/objects/9a:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  4 17:54 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69   80 May  4 17:54 9edfacbead7190e548fbbbf954e32bb5c9edf3
+
+./.git/objects/9b:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  2 14:59 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  365 May  2 14:59 9445f1a9bba14d8e1d9cdf1ab800012a4ed9d0
+
+./.git/objects/a0:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  2 14:59 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  352 May  2 14:59 8d3187d1aac9c0dffa52f7cfc8913bf847c998
+
+./.git/objects/a1:
+total 16
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  4 17:54 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  177 May  3 23:29 782dbba948a167871aeac4dc496a6637a0b034
+-r--r--r--  1 elblasco69 elblasco69  254 May  4 17:54 f6e8159ef696f10531f4644406996ff37b36f1
+
+./.git/objects/a9:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  2 16:24 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69   60 May  2 16:24 02f41695ed4718b7fbb48bca16e4f44ee34cff
+
+./.git/objects/ab:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:29 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69   93 May  3 23:29 4e570e198e85b9603936581712a8f47b281862
+
+./.git/objects/b4:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  2 14:59 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  168 May  2 14:59 01510bdfe5ffceb0a87e2bacd492da0933cdab
+
+./.git/objects/b5:
+total 16
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  2 16:24 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  349 May  2 16:24 4c7d758beca79d744da93b6b766718e57d8c7d
+-r--r--r--  1 elblasco69 elblasco69  165 May  2 14:59 5a9ea6cf55a2425385b93953d94386eb87926f
+
+./.git/objects/bc:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  2 14:59 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  268 May  2 14:59 9bae18834b641d53220de1dc4ebace3ec71b49
+
+./.git/objects/c0:
+total 16
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:29 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  382 May  3 23:29 3e0522fa214b6f1020f30a046585ebda940c18
+-r--r--r--  1 elblasco69 elblasco69  262 May  3 23:29 a0b66eadd8fa14babf1c62d2e4ab0fa2cdc235
+
+./.git/objects/c3:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  2 14:59 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  170 May  2 14:59 acb86ceea350f94c72e396c754b41d8e01aabc
+
+./.git/objects/cb:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  2 14:59 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  165 May  2 14:59 776e741162bcb9f293b15fba054096cc600ee0
+
+./.git/objects/d6:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  6 09:04 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  205 May  6 09:04 379373f1b474c2e7469066ded8dc953f278c2f
+
+./.git/objects/d9:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:29 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  196 May  3 23:29 967ad0a01243d76fa646a34f11305e5de43f97
+
+./.git/objects/dc:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:29 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  355 May  3 23:29 8a55c6a40fe7f89ebfce0f263a2093fe1dfc8b
+
+./.git/objects/df:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  6 09:04 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  283 May  6 09:04 956b134728d694089d3b0ef25d082d34e668a4
+
+./.git/objects/e3:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  2 14:59 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  262 May  2 14:59 8e35b9ce724769ecca19c94846fa961e09db64
+
+./.git/objects/e8:
+total 16
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  5 15:32 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  152 May  5 15:32 ad30ba63dd40379c91b331647e7e8a49fc8d3f
+-r--r--r--  1 elblasco69 elblasco69  222 May  4 17:54 d60aca8782413b13e376e5e9a6cd64bbaf9413
+
+./.git/objects/eb:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:29 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  253 May  3 23:29 e2e8af12a8773b062e611a79d18c9a553608a7
+
+./.git/objects/ed:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  2 16:25 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  567 May  2 16:25 2bb2ef9c6a870601b5f493371bd93e783a2072
+
+./.git/objects/ef:
+total 16
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  3 23:34 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  172 May  3 23:34 295b7ebba1b929cfad3c9e9057fdd1b4972b63
+-r--r--r--  1 elblasco69 elblasco69  167 May  2 14:59 96d8d69671d46fe8ca830ed43e5045b98f3aff
+
+./.git/objects/fc:
+total 12
+drwxr-xr-x  2 elblasco69 elblasco69 4096 May  2 16:24 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69  300 May  2 16:24 0301d964b5b2f06d9da6bd3f2c7e56ceabeff1
+
+./.git/objects/info:
+total 8
+drwxr-xr-x  2 elblasco69 elblasco69 4096 Mar 21 13:09 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+
+./.git/objects/pack:
+total 16
+drwxr-xr-x  2 elblasco69 elblasco69 4096 Mar 21 13:09 .
+drwxr-xr-x 78 elblasco69 elblasco69 4096 May  6 09:04 ..
+-r--r--r--  1 elblasco69 elblasco69 1184 Mar 21 13:09 pack-66611cb5b67cedb44fc9bf3250dca36227912558.idx
+-r--r--r--  1 elblasco69 elblasco69  876 Mar 21 13:09 pack-66611cb5b67cedb44fc9bf3250dca36227912558.pack
+
+./.git/refs:
+total 20
+drwxr-xr-x 5 elblasco69 elblasco69 4096 Mar 21 13:09 .
+drwxr-xr-x 8 elblasco69 elblasco69 4096 May  6 17:01 ..
+drwxr-xr-x 2 elblasco69 elblasco69 4096 May  6 09:04 heads
+drwxr-xr-x 3 elblasco69 elblasco69 4096 Mar 21 13:09 remotes
+drwxr-xr-x 2 elblasco69 elblasco69 4096 Mar 21 13:09 tags
+
+./.git/refs/heads:
+total 12
+drwxr-xr-x 2 elblasco69 elblasco69 4096 May  6 09:04 .
+drwxr-xr-x 5 elblasco69 elblasco69 4096 Mar 21 13:09 ..
+-rw-r--r-- 1 elblasco69 elblasco69   41 May  6 09:04 main
+
+./.git/refs/remotes:
+total 12
+drwxr-xr-x 3 elblasco69 elblasco69 4096 Mar 21 13:09 .
+drwxr-xr-x 5 elblasco69 elblasco69 4096 Mar 21 13:09 ..
+drwxr-xr-x 2 elblasco69 elblasco69 4096 May  6 09:07 origin
+
+./.git/refs/remotes/origin:
+total 16
+drwxr-xr-x 2 elblasco69 elblasco69 4096 May  6 09:07 .
+drwxr-xr-x 3 elblasco69 elblasco69 4096 Mar 21 13:09 ..
+-rw-r--r-- 1 elblasco69 elblasco69   30 Mar 21 13:09 HEAD
+-rw-r--r-- 1 elblasco69 elblasco69   41 May  6 09:07 main
+
+./.git/refs/tags:
+total 8
+drwxr-xr-x 2 elblasco69 elblasco69 4096 Mar 21 13:09 .
+drwxr-xr-x 5 elblasco69 elblasco69 4096 Mar 21 13:09 ..
