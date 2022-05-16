@@ -4,11 +4,10 @@
 #include <fcntl.h>
 #include <unistd.h>
 
-void scriviIlPID(char *file){
-    FILE *fpt=fopen(file,"a");
+void scriviIlPID(FILE *file){
     int pid=getpid();
-    fprintf(fpt,"%d\n",pid);
-    fclose(fpt);
+    fprintf(file,"%d\n",pid);
+    fflush(file);
 }
 
 int main(int argc,char **argv){
@@ -20,12 +19,13 @@ int main(int argc,char **argv){
         printf("Numero non compreso tra 1 e 10\n");
         exit(4);
     }
-    int fd=open(argv[1],O_CREAT|O_EXCL,777);
-    if(fd<0){
-        printf("Impossibile aprire il file\n");
+    FILE *file=fopen(argv[1],"r");
+    if(file!=NULL){
+        printf("Il file esite già\n");
         exit(5);
     }
-    close(fd);
-    scriviIlPID(argv[2]);
+    file=fopen(argv[1],"w");
+    scriviIlPID(file);
+    fclose(file);
     return 0;
 }
