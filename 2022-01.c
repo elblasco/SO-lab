@@ -24,8 +24,16 @@ int main(int argc,char **argv){
         printf("Il file esite già\n");
         exit(5);
     }
-    file=fopen(argv[1],"w");
+    file=fopen(argv[1],"a");
     scriviIlPID(file);
+    while(numero>0){
+        int figlio=fork();
+        if(getpid()==0){
+            scriviIlPID(file);
+        }
+        printf("Sono il figlio %d\n",numero);
+        numero--;
+    }
     fclose(file);
     return 0;
 }

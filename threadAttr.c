@@ -25,7 +25,7 @@ int main(){
     printf("Ho eseguito il thread con id %ld\n",tId);
     pthread_attr_setdetachstate(&attr,PTHREAD_CREATE_JOINABLE); //Istruzione che in questo caso non ha effetto
     sleep(3);
-    int esito=pthread_join(tId,(void **)&statoDetach);
-    printf("Terminato con esito %d\n",esito);
+    //int esito=pthread_join(tId,(void **)&statoDetach);
+    //printf("Terminato con esito %d\n",esito);
     return 0;
 }
