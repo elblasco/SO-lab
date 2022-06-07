@@ -1,112 +1,100 @@
-#include<stdio.h>
-#include<unistd.h>
-#include<signal.h>
-#include<stdbool.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <stdbool.h>
 #include <sys/wait.h>
-#include<string.h>
+#include <signal.h>
 
 #define MAXLEAF 10
 
-FILE*out;
-int foglie[MAXLEAF],indice_foglie=0,fd[2];
+FILE *ptr;
+int array_leaf[MAXLEAF],index_leaf=0,n_figli;
+int leaf_pipes[MAXLEAF][2];
+int my_pid;
 
 void manager_handler(int signo){
-    if(signo==SIGUSR1){
-        if(indice_foglie-1<0){
-            exit(0);
-        }
-        else{
-            printf("Faccio sesso\n");
-            fflush(stdout);
-            close(fd[0]);
-            write(fd[1],"SIGUSR1",8);
-            write(fd[1],getpid(),sizeof(int)*5);
-            printf("Mo uccido la figlia con il PID %d\n",foglie[indice_foglie-1]);
-            fflush(stdout);
-            kill(SIGKILL,foglie[indice_foglie-1]);
-            indice_foglie--;
-        }
+    if(signo==SIGUSR1 && index_leaf-1>=0){
+        printf("Ho ricevuto un USR1 e adesso lo invio a %d\n",array_leaf[index_leaf-1]);
+        kill(SIGUSR1,array_leaf[index_leaf-1]);
     }
     if(signo==SIGUSR2){
-        printf("Mi è arrivato uno SIGUSR2 da una foglia\n");
-        fflush(stdout);
+        printf("Ho ricevuto un USR2\n");
     }
 }
 
-bool file_check(const char* file_name){
-    FILE* tmp=fopen(file_name,"r");
-    bool find=false;
-    if(tmp!=NULL){
-        find=true;
-        fclose(tmp);
+void leaf_handler(int signo){
+    if(signo==SIGUSR1){
+        int padre;
+        read(leaf_pipes[my_pid][0],&padre,sizeof(padre));
+        printf("Sono il figlio e sto per mandare il segnale al padre %d\n",padre);
+        kill(SIGUSR2,padre);
+        exit(0);
     }
-    return find;
+}
+
+bool file_exists(const char* path){
+    FILE* prova=fopen(path,"r+");
+    bool trovato=false;
+    if(prova!=NULL){
+        trovato=true;
+        fclose(prova);
+    }
+    return trovato;
 }
 
 void scrivi_pid(){
-    fprintf(out,"%d\n",getpid());
-    fflush(out);
+    fprintf(ptr,"%d\n",getpid());
+    fflush(ptr);
 }
 
-int genera_foglie(int n_foglie){
-    for(int i=0;i<n_foglie;++i){
-        int foglia=fork();
-        foglie[indice_foglie]=foglia;
-        indice_foglie++;
-        if(foglia==0){
+void manager_logic(){
+    signal(SIGUSR1,manager_handler);
+    signal(SIGALRM,SIG_IGN);
+    for(int i=0;i<n_figli;++i){
+        int leaf=fork();
+        if(leaf==0){
+            my_pid=i;
+            printf("Il mio offset è %d\n",my_pid);
+            signal(SIGUSR1,leaf_handler);
+            signal(SIGCHLD,SIG_IGN);
+            signal(SIGCONT,SIG_IGN);
             scrivi_pid();
-            char lettura_pipe[8];
-            int pid_manager=0;
-            close(fd[1]);
-            read(fd[0],pid_manager,sizeof(int)*5);
-            read(fd[0],lettura_pipe,8);
-            if(strcmp("SIGUSR1",lettura_pipe)){
-                kill(SIGUSR2,pid_manager);
-            }
             while(true){
                 pause();
             }
         }
+        else{
+            int pid_manager=getpid();
+            pipe(leaf_pipes[index_leaf]);
+            write(leaf_pipes[index_leaf][1],&pid_manager,sizeof(pid_manager));
+            array_leaf[index_leaf]=leaf;
+            index_leaf++;
+        }
     }
 }
 
-int logica_manager(int i){
-    signal(SIGUSR1,manager_handler);
-    signal(SIGUSR2,manager_handler);
-    printf("Il manager ha PID %d\n",getpid());
-    scrivi_pid();
-    if(pipe(fd)<0){
-        exit(-66);
-    }
-    genera_foglie(i);
-    while(wait(NULL)>0);
-    return 1;
-}
-
-int main(int argc ,char ** argv){
-    int n=atoi(argv[2]);
-    if(argc!=3){
+int main(int argc, char **argv){
+    int argomenti=argc;
+    if(argomenti!=3){
         exit(3);
     }
-    if(n<1 || n>10){
+    n_figli=atoi(argv[2]);
+    if(n_figli<1 || n_figli>10){
         exit(4);
     }
-    if(file_check(argv[1])){
+    if(file_exists(argv[1])){
         exit(5);
     }
-    out=fopen(argv[1],"w");
-    if(out==NULL){
-        exit(5);
-    }
+    ptr=fopen(argv[1],"w");
     scrivi_pid();
     int manager=fork();
     if(manager==0){
-        //printf("Hey sono il manager il cui pid è %d\n",getpid());
-        return logica_manager(n);
+        printf("Sono il manager %d\n",getpid());
+        scrivi_pid();
+        manager_logic();
+        while (wait(NULL)>0);
     }
     else{
-        //printf("Il padre aspetta e ha il pid %d\n",getpid());
         while(wait(NULL)>0);
     }
     return 0;
