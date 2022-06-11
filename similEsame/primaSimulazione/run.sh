@@ -1,9 +1,9 @@
 #!/bin/bash
 
-if [ -e $1 ]; then
-    rm $1
+if [[ -f $1 ]];
+    then
+        rm $1
+        make
+    else
+        make
 fi
-
-make
-./program $1 $2
-cat $1

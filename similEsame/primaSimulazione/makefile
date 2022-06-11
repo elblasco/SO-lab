@@ -1,5 +1,4 @@
 NAME=program
-CC=gcc
 
 $(NAME): main.c
-	@$(CC) -o $(NAME) main.c
+	@gcc -o $(NAME) main.c
