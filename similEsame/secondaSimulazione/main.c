@@ -1,78 +1,21 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <fcntl.h>
-#include <string.h>
-#include <unistd.h>
-#include <signal.h>
-#include <termios.h>
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+#include<unistd.h>
+#include<stdbool.h>
+#include<signal.h>
+#include<termios.h>
 
-#define MAXARG 3
+#define ARGUMENTS 3
 #define MAXCHILD 10
-#define CHAREAD 6
 
 typedef enum {
     KP_ECHO_OFF,
     KP_ECHO_ON,
 } kp_echo_t;
 
-struct sigaction sa;
-FILE* out;
-FILE* in;
-int figli[MAXCHILD],counterFigli=0,contatoreClient=0,pid_letto;
-
-void scriveFiglio(){
-    fprintf(out,"+%d",getpid());
-    fflush(out);
-}
-
-void clientHandler(int signo){
-    if(signo==SIGINT){
-        exit(0);
-    }
-}
-
-void handler(int signo){
-    if(signo==SIGUSR1){
-        int figlio=fork();
-        if(figlio==0){
-            scriveFiglio();
-            while (1){
-                pause();
-            }
-            
-        }
-        else{
-            figli[counterFigli]=figlio;
-            counterFigli++;
-            printf("+[server] %d\n",figli[counterFigli-1]);
-            fflush(stdout);
-        }
-    }
-    else if(signo==SIGUSR2){
-        if(counterFigli==0){
-            fprintf(out,"-0\n");
-            fflush(out);
-            printf("-[server] 0\n");
-            fflush(stdout);
-        }
-        else{
-            fprintf(out,"-%d\n",figli[counterFigli-1]);
-            fflush(out);
-            printf("-[server] %d\n",figli[counterFigli-1]);
-            fflush(stdout);
-            kill(figli[counterFigli-1],SIGKILL);
-            --counterFigli;
-        }
-    }
-    else if(signo==SIGINT){
-        fprintf(out,"%d",counterFigli);
-        fflush(out);
-    }
-    else{
-        perror("segnale non gestito");
-        exit(3);
-    }
-}
+FILE * ptr=NULL;
+int n_child=0,v_child[MAXCHILD],pid_server;
 
 int keypress(const kp_echo_t echo) {
     struct termios savedState, newState;
@@ -90,83 +33,119 @@ int keypress(const kp_echo_t echo) {
     return c;
 }
 
-FILE *w_fopen(const char * nome,const char* mod){
-    FILE *ret=fopen(nome,mod);
-    if(ret==NULL){
-        perror("Non sopno riuscito ad aprire il file");
-        exit(2);
+bool file_check(const char *path){
+    FILE *tmp=fopen(path,"r");
+    bool trovato=false;
+    if(ptr!=NULL){
+        trovato=true;
     }
-    else{
-        return ret;
-    }
+    fclose(tmp);
+    return trovato;
 }
 
-void get_pid(){
-    fscanf(in,"%d\n",&pid_letto);
-    printf("%d\n",pid_letto);
-}
-
-void w_client(const int signo,const int pausa){
-    if(signo==SIGUSR1 && contatoreClient<9){
-        contatoreClient++;
-        kill(pid_letto,signo);
-        sleep(pausa);
+void server_handler(int signo){
+    if(signo==SIGINT){
+        fprintf(ptr,"%d\n",n_child);
+        fflush(ptr);
+        exit(0);
     }
-    else if(signo==SIGUSR2 && contatoreClient>0){
-        contatoreClient--;
-        kill(pid_letto,signo);
-        sleep(pausa);
+    if(signo==SIGUSR1){
+        if(n_child<MAXCHILD){
+            int child=fork();
+            if(child==0){
+                while(1){
+                    pause();
+                }
+            }
+            else if(child>0){
+                v_child[n_child]=child;
+                n_child++;
+                fprintf(ptr,"+%d\n",child);
+                fflush(ptr);
+                printf("[server] %d\n",child);
+                fflush(stdout);
+            }
+            else{
+                exit(-99);
+            }
+        }
     }
-}
-
-int main(int argc,char ** argv){
-    if(argc!=MAXARG){
-        fprintf(stderr,"Numero argomenti errato\n");
-        exit(2);
-    }
-    else{
-        if(strcmp(argv[1],"server")==0){
-            sa.sa_handler = handler;
-            sigemptyset(&sa.sa_mask);
-            sigaction(SIGUSR1,&sa,NULL);
-            sigaction(SIGUSR2,&sa,NULL);
-            sigaction(SIGINT,&sa,NULL);
-            out=w_fopen(argv[2],"w+");
-            fprintf(out,"%d\n",getpid());
-            fflush(out);
-            printf("[server:%d]\n",getpid());
-            while(1){
-                pause();
-            };
+    if(signo==SIGUSR2){
+        if(n_child>0){
+            n_child--;
+            int figlio=v_child[n_child];
+            fprintf(ptr,"-%d\n",figlio);
+            fflush(ptr);
+            printf("[server] %d\n",figlio);
+            fflush(stdout);
         }
         else{
-            
-            sa.sa_handler=clientHandler;
-            sigemptyset(&sa.sa_mask);
-            sigaction(SIGINT,&sa,NULL);
-            char buffer[CHAREAD];
-            while(in==NULL){
-                in=w_fopen(argv[2],"r+");
+            fprintf(ptr,"-%d\n",0);
+            fflush(ptr);
+            printf("[server] %d\n",0);
+            fflush(stdout);
+        }
+    }
+}
+
+void write_pid(){
+    fprintf(ptr,"%d\n",getpid());
+    fflush(ptr);
+    printf("[server:%d]\n",getpid());
+    fflush(stdout);
+}
+
+int main(int argc, char ** argv) {
+    if(argc!=ARGUMENTS){
+        exit(-1);
+    }
+
+    if(strcmp(argv[1],"server")==0){
+        ptr=fopen(argv[2],"w");
+
+        if(ptr==NULL || !file_check(argv[2])){
+            exit(-2);
+        }
+
+        signal(SIGUSR1,server_handler);
+        signal(SIGUSR2,server_handler);
+        signal(SIGINT,server_handler);
+        write_pid();
+        while(1){
+            pause();
+        }
+    }
+    if(strcmp(argv[1],"client")==0){
+        while(ptr==NULL){
+            ptr=fopen(argv[2],"r");
+        }
+        fscanf(ptr,"%d\n",&pid_server);
+        char c;
+        int counter=0;
+        while (1) {
+            c = keypress(KP_ECHO_OFF);
+            if (c=='+') {
+                printf("PLUS\n");
+                if(counter<10){
+                    kill(pid_server,SIGUSR1);
+                    counter++;
+                }
             }
-            get_pid();
-            printf("Sono qua con il pid del server a %d\n",pid_letto);
-            char c;
-            while (1) {
-                c = keypress(KP_ECHO_OFF); // read single keypress without echoing
-                if (c=='+') {
-                    printf("PLUS\n");
-                    w_client(SIGUSR1,0);
+            if (c=='-') {
+                printf("MINUS\n");
+                if(counter>0){
+                    kill(pid_server,SIGUSR2);
+                    counter--;
                 }
-                if (c=='-') {
-                    printf("MINUS\n");
-                    w_client(SIGUSR2,0);
+            }
+            if (c=='\n') {
+                printf("ENTER\n");
+                for(;counter>0;--counter){
+                    kill(pid_server,SIGUSR2);
+                    sleep(1);
                 }
-                if (c=='\n') {
-                    printf("ENTER\n");
-                    while(contatoreClient>0){
-                        w_client(SIGUSR2,1);
-                    }
-                }
+                kill(pid_server,SIGINT);
+                break;
             }
         }
     }
