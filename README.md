@@ -1,4 +1,6 @@
-# SO
+# SO LABORATORIO
+
+La repo fa riferimento al corso tenuto durante il secondo semstre dell'anno accademico 2021/2022.  
 
 In questa repo si trovano
 >* [Simil esami](https://github.com/ElBlasco69/SO/tree/main/similEsame)
