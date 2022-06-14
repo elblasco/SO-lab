@@ -1,0 +1,7 @@
+1.c
+2.c
+3.c
+a.out
+log.txt
+makefile
+output.txt
